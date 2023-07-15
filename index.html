@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Players</title>
+    <link rel="stylesheet" href="./assets//css//style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;500&family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <!-- overlay modal -->
+      <div class="overlay"></div>
+      <div class="wrapper" id="notification">
+        <!-- notification modal -->
+        <!-- header -->
+        <header class="header">
+          <div class="header-list">
+            <span class="header-item name-app">TunPhm</span>
+            <div class="header-item">
+              <span class="favourite-songs"><i class="fa-regular fa-heart"></i></span>
+              <span class="list-songs"><i class="fa-solid fa-headphones"></i></span>
+            </div>
+          </div>
+        </header>
+        <!-- container -->
+        <!-- playlist song -->
+        <section class="list-songs_box" id="style-4">
+            <div class="header-modal-playlist">
+              <h4 class="heading-playlist">Playlist</h4>
+              <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            </div> 
+            <div class="all-songs"></div>
+        </section>
+        <!-- playlist love song -->
+        <section class="list-love-songs_box" id="style-4">
+          <div class="header-modal-playlist-love">
+            <h4 class="heading-playlist-love">Your song</h4>
+            <span class="closeLovePlaylist"><i class="fa-solid fa-xmark"></i></span>
+          </div> 
+          <div class="all-songs-love"></div>
+        </section>
+        <section class="container">
+          <!-- thumbnail -->
+          <div class="cd">
+            <div class="thumbnail">
+              <img src="" alt="thumbnail" class="thumbnail-img">
+            </div>
+          </div>
+          <!-- name song and author -->
+          <div class="info-song">   
+            <div class="container-info">
+              <p class="name-song">Nakhla</p>
+              <p class="author">Hidden & Khalse & Sijal</p>
+            </div>
+          </div>
+          <!-- control -->
+          <div class="control">
+            <input type="range" name="volume" min="0" max="100" value="0" step="1" id="progress" class="duration-bar">
+            <!-- audio -->
+            <audio src="" id="audio"></audio>
+            <div class="control-button">
+              <span class="random"><i class="fa-solid fa-shuffle"></i></span>
+              <ul class="actions">
+                <li class="prev"><i class="fa-solid fa-backward-step"></i></li>
+                <li class="play"><i class="fa-solid fa-play"></i></li>
+                <li class="next"><i class="fa-solid fa-forward-step"></i></li>
+              </ul>
+              <span class="loop"><i class="fa-solid fa-rotate-left"></i></span>
+            </div>
+            
+          </div>
+        </section>
+      </div>
+    </main>  
+  </div>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>
