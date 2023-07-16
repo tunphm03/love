@@ -67,7 +67,7 @@ const app = {
     },
     {
       id: 5,
-      name: "Tình Dang Dở",
+      name: "I Do-911",
       singer: "Phạm Tuấn",
       path: "./assets/song/song6.mp3",
       img: "./assets/img/img6.jpg",
